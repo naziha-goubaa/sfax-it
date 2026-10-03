@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">شركات صفاقس</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="register_title">إنشاء حساب</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="password_confirm">تأكيد كلمة المرور</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="settings">الإعدادات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="dark_theme">الوضع الداكن</string>
+    <string name="language">اللغة</string>
+    <string name="already_registered">مسجل بالفعل؟ تسجيل الدخول</string>
+</resources>

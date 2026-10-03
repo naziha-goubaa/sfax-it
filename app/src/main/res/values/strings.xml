@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sfax IT Companies</string>
+    <string name="login_title">Connexion</string>
+    <string name="register_title">Créer un compte</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="password_confirm">Confirmer le mot de passe</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="login">Se connecter</string>
+    <string name="settings">Paramètres</string>
+    <string name="logout">Déconnexion</string>
+    <string name="dark_theme">Thème sombre</string>
+    <string name="language">Langue</string>
+    <string name="already_registered">Déjà inscrit ? Se connecter</string>
+</resources>

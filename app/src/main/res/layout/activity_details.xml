@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <!-- LOGO -->
+                <ImageView
+                    android:id="@+id/companyImage"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- NAME -->
+                <TextView
+                    android:id="@+id/companyName"
+                    android:text="Nom de l'entreprise"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- SERVICES TITLE -->
+                <TextView
+                    android:text="SERVICES"
+                    android:textStyle="bold"
+                    android:textColor="#E53935"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ListView
+                    android:id="@+id/listServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:dividerHeight="1dp"
+                    android:divider="#BDBDBD"
+                    android:nestedScrollingEnabled="false"/>
+
+                <!-- WEATHER -->
+                <LinearLayout
+                    android:id="@+id/weatherLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:background="#E3F2FD"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:text="Météo"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#0D47A1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvWeather"
+                        android:text="--"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- BUTTON CV CONTAINER -->
+                <LinearLayout
+                    android:id="@+id/cvContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+                    <!-- Le bouton sera ajouté dynamiquement depuis DetailsActivity -->
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ACTION BUTTONS -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnWebsite"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_web" />
+
+            <ImageView
+                android:id="@+id/btnCall"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_call" />
+
+            <ImageView
+                android:id="@+id/btnMail"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_mail" />
+
+            <ImageView
+                android:id="@+id/btnLocation"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_location" />
+
+            <ImageView
+                android:id="@+id/btnCalendar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/calen" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
